@@ -32,7 +32,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     echo '$ sudo -u postgres createuser vagrant -s'
     echo '$ sudo -u postgres psql'
     echo 'postgres=# \password vagrant'
+    echo '------ set password ------'
     echo 'postgres=# create database yourdatabase;'
+    echo '######## Japanaize ########'
+    echo '$ sudo apt-get install -y language-pack-ja'
+    echo '$ sudo update-locale LANGUAGE=ja_JP.utf-8 LANG=ja_JP.utf-8 LC_ALL=ja_JP.utf-8'
+    echo '$ sudo ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime'
+    echo '------ and restart vm ------'
     echo
   CMD
 
