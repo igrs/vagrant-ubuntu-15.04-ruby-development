@@ -1,0 +1,4 @@
+.vagrant/
+apps/*
+!.keep
+git.exe.stackdump

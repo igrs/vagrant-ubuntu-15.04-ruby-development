@@ -7,10 +7,9 @@ use <https://atlas.hashicorp.com/ubuntu/boxes/vivid64>
 ## repos
 
 ## provisioning
-* zsh
 * git
 * nginx
-* mysql
-* postgreql(9.4)
-* rbnev
-* ruby (rbenv golobal 2.2)
+* postgreql
+* rbnev (install /usr/local)
+* ruby (rbenv global 2.2)
+* bundler (rbenv exec gem bundler)
