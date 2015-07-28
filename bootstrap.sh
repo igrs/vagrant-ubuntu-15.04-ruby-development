@@ -36,6 +36,7 @@ apt-get install git-core \
                 libxslt1-dev \
                 libcurl4-openssl-dev \
                 python-software-properties \
+                libpq-dev \
                 libffi-dev -y
 
 # remove system ruby
