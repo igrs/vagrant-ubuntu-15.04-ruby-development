@@ -13,7 +13,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # memory and cpus
   config.vm.provider "virtualbox" do |v|
-    v.customize ['modifyvm', :id, '--memory', 1024, '--cpus', 1]
+    v.customize [
+      'modifyvm', :id,
+      '--memory', 1024,
+      '--cpus', 1,
+      '--paravirtprovider', 'kvm',]
   end
 
   # private network ip address
